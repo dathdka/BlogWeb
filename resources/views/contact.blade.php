@@ -8,32 +8,9 @@
 
 		<div class="colorlib-contact">
 			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-12 animate-box">
-						<h2>Contact Information</h2>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="contact-info-wrap-flex">
-									<div class="con-info">
-										<p><span><i class="icon-location-2"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
-									</div>
-									<div class="con-info">
-										<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-									</div>
-									<div class="con-info">
-										<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-									</div>
-									<div class="con-info">
-										<p><span><i class="icon-globe"></i></span> <a href="#">yourwebsite.com</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Message Us</h2>
+						<h2>Liên hệ với chúng tôi</h2>
 					</div>
 
 					<div class="col-md-6">

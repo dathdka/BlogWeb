@@ -1,6 +1,6 @@
 @extends('main_layouts.master')
 
-@section('title', $post->title . ' | MyBlog')
+@section('title', $post->title)
 
 @section('custom_css')
 
@@ -35,7 +35,7 @@
 							<div class="col-md-12">
 								<h2 class="colorlib-heading-2">{{ count($post->comments) }} Comments</h2>
 
-								@foreach($post->comments as $comment)
+								@forelse($post->comments as $comment)
 								<div id="comment_{{ $comment->id }}" class="review">
 							   		<div 
 							   		class="user-img" 
@@ -51,7 +51,9 @@
 							   			</p>
 							   		</div>
 							   	</div>
-							   	@endforeach
+								@empty
+									<h1>Hãy là người đầu tiên bình luận</h1>
+							   	@endforelse
 
 
 							</div>
@@ -72,7 +74,7 @@
 									<div class="row form-group">
 										<div class="col-md-12">
 											<!-- <label for="message">Message</label> -->
-											<textarea name="the_comment" id="the_comment" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+											<textarea name="the_comment" id="the_comment" cols="30" rows="10" class="form-control" placeholder="Hãy nói gì về bài viết này"></textarea>
 										</div>
 									</div>
 									<div class="form-group">
