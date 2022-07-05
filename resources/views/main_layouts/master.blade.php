@@ -84,6 +84,8 @@
                                 </li>
                                 <li><a href="{{ route('about') }}">Thông tin</a></li>
                                 <li><a href="{{ route('contact.create') }}">Liên hệ</a></li>
+                                <li>
+                                </li>
 
                                 @guest
                                 <li class="btn-cta"><a href="{{ route('login') }}"><span>Đăng nhập</span></a></li>
@@ -96,8 +98,8 @@
                                     <a href="#">{{ auth()->user()->name }} <span class="caret"></span></a>
                                     <ul class="dropdown">
                                         @if (Auth::user()->role_id==2)
-                                       <li><a href="{{ route('admin.index') }}">Dashboard</a></li>
-                                       @endif 
+                                        <li><a href="{{ route('admin.index') }}">Dashboard</a></li>
+                                        @endif
                                         <li>
                                             <a onclick="event.preventDefault();
                                             document.getElementById('nav-logout-form').submit()" href="#">Logout</a>
@@ -105,12 +107,12 @@
                                             <form id="nav-logout-form" action="{{ route('logout') }}" method="POST">
                                                 @csrf
                                             </form>
-                                            
+
                                         </li>
-                                       
+
                                     </ul>
                                 </li>
-                                
+
                                 @endauth
                             </ul>
                         </div>
@@ -140,7 +142,7 @@
                             <li><a href="mailto:dathdka@gmail.com"><i class="icon-envelope"></i> dathdka@gmail.com</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="copy">
@@ -194,5 +196,30 @@
     @yield('custom_js')
 
 </body>
+<script>
+        const searchInputDropdown = document.getElementById('search-input-dropdown');
+        const dropdownOptions = document.querySelectorAll('.input-group-dropdown-item');
 
+        searchInputDropdown.addEventListener('input', () => {
+            const filter = searchInputDropdown.value.toLowerCase();
+            showOptions();
+            const valueExist = !!filter.length;
+
+            if (valueExist) {
+                dropdownOptions.forEach((el) => {
+                    const elText = el.textContent.trim().toLowerCase();
+                    const isIncluded = elText.includes(filter);
+                    if (!isIncluded) {
+                        el.style.display = 'none';
+                    }
+                });
+            }
+        });
+
+        const showOptions = () => {
+            dropdownOptions.forEach((el) => {
+                el.style.display = 'flex';
+            })
+        }
+    </script>
 </html>

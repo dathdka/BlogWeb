@@ -38,7 +38,7 @@
                                 <div class="col-lg-12">
                                     <div class="border border-3 p-4 rounded">
 
-                                        <div class="mb-3">
+                                        <div class="mb-3" hidden>
                                             <label for="about_first_text" class="form-label">Top Text</label>
                                             <textarea name='about_first_text' class="form-control" id="about_first_text">{{ $setting->about_first_text }}</textarea>
                                         
@@ -47,7 +47,7 @@
                                             @enderror
                                         </div>
 
-                                        <div class="mb-3">
+                                        <div class="mb-3" hidden>
                                             <label for="about_second_text" class="form-label">Bottom Text</label>
                                             <textarea name='about_second_text' class="form-control" id="about_second_text">{{ $setting->about_second_text }}</textarea>
                                         
@@ -56,7 +56,7 @@
                                             @enderror
                                         </div>
 
-                                        <div class='row'>
+                                        <div class='row' hidden>
                                             <div class='col-md-8'>
                                                 <div class="mb-3">
                                                     <label for="about_first_image" class="form-label">First Image</label>
@@ -74,7 +74,7 @@
                                             </div>
                                         </div>
 
-                                        <div class='row'>
+                                        <div class='row' hidden>
                                             <div class='col-md-8'>
                                                 <div class="mb-3">
                                                     <label for="about_second_image" class="form-label">Second Image</label>

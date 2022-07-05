@@ -8,8 +8,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h3>Knowledge online learning center</h3>
-						<p>{{ $setting->about_second_text }}</p>
+						<h3>Tầm nhìn và sứ mệnh</h3>
+						<p>Mang tới nguồn tin tức đáng tin cậy tới với độc giả</p>
 					</div>
 					<div class="col-md-6">
 						<div class="fancy-collapse-panel">
@@ -17,7 +17,7 @@
 	                     <div class="panel panel-default">
 	                         <div class="panel-heading" role="tab" id="headingOne">
 	                             <h4 class="panel-title">
-	                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Our Mission
+	                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Sứ mệnh
 	                                 </a>
 	                             </h4>
 	                         </div>
@@ -32,7 +32,7 @@
 	                     <div class="panel panel-default">
 	                         <div class="panel-heading" role="tab" id="headingTwo">
 	                             <h4 class="panel-title">
-	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Our Vision
+	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Tầm nhìn
 	                                 </a>
 	                             </h4>
 	                         </div>
@@ -45,7 +45,7 @@
 	                     <div class="panel panel-default">
 	                         <div class="panel-heading" role="tab" id="headingThree">
 	                             <h4 class="panel-title">
-	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Services
+	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Dịch vụ
 	                                 </a>
 	                             </h4>
 	                         </div>
